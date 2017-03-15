@@ -4,6 +4,24 @@ A chatbot framework for facebook messenger with routing.
 
 Facebook messenger developer documentation: https://developers.facebook.com/docs/messenger-platform
 
+## Getting things started
+
+To start this node service, you need to add the following environment variables
+
+- PAGE_ACCESS_TOKEN
+- APP_SECRET
+- VERIFY_TOKEN
+
+You will need to set these up first on your Facebook messenger app page.
+
+you can then start the service as follows:
+
+````
+~: PAGE_ACCESS_TOKEN=<add token> APP_SECRET=<add secret> VERIFY_TOKEN=<add token> node ./server
+````
+
+The service will exit automatically if you try and start without the required tokens and app secret. 
+
 ## Server documentation
 
 You should not need to modify the server code (/server/) and should rather look the make changes in the app directory (/app/).
