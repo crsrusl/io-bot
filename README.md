@@ -10,7 +10,15 @@ You should not need to modify the server code (/server/) and should rather look 
 
 ### Flow of data
 
-*Webhook* > *Controller* [delivery-controller, message-controller, postback-controller] > *Router* > *Routes* > *Topic* 
+````
+Webhook > Controller [delivery-controller, message-controller, postback-controller] > Router > Routes > Topic
+````
+ 
+Another way to think of it:
+
+````
+Incoming data from Facebook [webhook] > Extraction of message type, transforms data and sends to router [controller] > Sends to route [router] > Sends message to Facebook [topics]
+````
 
 ### Facebook webhook
 
