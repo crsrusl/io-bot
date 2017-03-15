@@ -1,0 +1,24 @@
+{
+  "name": "io-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "deploy": "./config/devops/deploy.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "faker": "^4.1.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "async": "^2.1.5",
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "morgan": "^1.8.1",
+    "request": "^2.79.0"
+  }
+}
